@@ -1,0 +1,94 @@
+<div class="log-design">
+  <div class="container-fluid decor" *ngIf="!displayLoader">
+    <!-- invalid credentials start here -->
+    <div class="alert alert-danger" id="alert" role="alert" *ngIf="failure">
+      Invalid Credentials. Please try again!
+      <button type="button" class="close" (click)="removeAlert()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!-- Loader starts here -->
+    <app-loader *ngIf="displayLoader"></app-loader>
+    <!-- Loader ends here -->
+
+    <!-- Login form starts here -->
+    <div *ngIf="!displayLoader">
+      <h2 style="text-align: center">Login form</h2>
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              [(ngModel)]="email"
+              #mail="ngModel"
+              [class.is-invalid]="mail.invalid && mail.touched"
+              placeholder="Enter email"
+              required
+            />
+            <small
+              class="text-danger"
+              [class.d-none]="mail.valid || mail.untouched"
+              >Email is required</small
+            >
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              [(ngModel)]="password"
+              placeholder="Enter password"
+              #pw="ngModel"
+              [class.is-invalid]="pw.invalid && pw.touched"
+              pattern="\d{6}$"
+              required
+            />
+            <div *ngIf="pw.errors && pw.invalid && pw.touched">
+              <small class="text-danger" *ngIf="pw.errors.required"
+                >Password is required!</small
+              >
+              <small class="text-danger" *ngIf="pw.errors.pattern"
+                >Password must be of 6 digits!</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4">&nbsp;</div>
+          <div class="col-md-4">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="!loginForm.form.valid"
+            >
+              Login
+            </button>
+          </div>
+          <div class="col-md-4">&nbsp;</div>
+        </div>
+        <br />
+      </form>
+    </div>
+    <!-- Login form ends here -->
+  </div>
+
+  <div class="park">
+    <p style="font-size: 48px; font-weight: 500">
+      If we are Growing , we're always
+    </p>
+    <p style="margin-left: 3em; font-size: 34px; font-weight: 500">
+      going to be out of our comfort zone.
+    </p>
+    <p style="margin-left: 25em; font-weight: 500; font-size: 21px">
+      -John Maxwell
+    </p>
+  </div>
+</div>

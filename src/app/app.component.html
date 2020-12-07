@@ -1,0 +1,161 @@
+<header>
+  <nav class="navbar" id="nav1">
+    <a style="color: white; font-size: 36px; margin-top: -4px" class="title "
+      (click)="clickf()" routerLinkActive="router-link-active">Crosby</a
+    >
+    <ul class="container justify-content-center">
+      <!-- <li><a  (click)="clickf()"  >Home</a></li> -->
+      <li><a (click)="show()" *ngIf="!_service.loggedIn()" routerLinkActive="active">Login</a></li>
+      <li><a (click)="toggle()" *ngIf="!_service.loggedIn()" routerLinkActive="active">Register</a></li>
+      <li><a class="nav-link justify-content-end" *ngIf="_service.loggedIn()"  style="cursor: pointer;" (click)="logOut()">LogOut</a></li>
+    </ul>
+    <ul class="figures justify-content-end">
+      <li>
+        <a href="https://www.instagram.com/aniket._.kesarwani.007/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/aniket.kesarwani.37/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="content justify-content-center">
+    <p>Plants And Pots</p>
+    <p>For Your Home</p>
+  </div>
+</header>
+<div *ngIf="!(flag || showLoginForm)">
+<section class="mid-sec">
+  <div class="sec">
+    <p>All Time Favourites</p>
+    <pre style="color: white; font-size: 17px; padding-top: 13px">
+Specifically chosen to thrive indoors and hardy enough to miss
+a watering or two, our plants are easy for anyone to care for.</pre
+    >
+  </div>
+  <div class="anime1">
+    <div class="image">
+      <a class="pic"
+        ><img
+          src="https://i1.wp.com/www.pine.sg/wp-content/uploads/2020/07/gia-euphorbia-tirucalli-.jpg?fit=723%2C1024&ssl=1"
+          class="imagecontent"
+      /></a>
+    </div>
+    <h2>1. Pencil Plant</h2>
+    <pre style="color: white; padding-left: 8em">
+  Pencil cactus is not a true cactus but a member of the Euphorbia family from tropical parts of Africa and India.
+In nature, it grows as a 30-foot tall, leafless tree with pencil-size green branches that function in photosynthesis.
+        Tiny leaves appear at the ends of new branches when new growth occurs, but they quickly fall.</pre
+    >
+  </div>
+  <div class="anime2">
+    <div class="image2">
+      <a class="pic1"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGDrghebt_s4-s8hFXUY2DmePr4xaaNI3jQ&usqp=CAU"
+          class="imagecontent2"
+      /></a>
+    </div>
+    <h2>2. Alocasia Plant</h2>
+    <pre style="color: white; padding-left: 11em;">
+                                Alocasia are tropical plants that are increasingly becoming popular as houseplants.
+                            The hybrid A. × amazonica has gained the Royal Horticultural Society's Award of Garden Merit.
+                      They are typically grown as pot plants, but a better way is to grow the plants permanently in the controlled  
+                      conditions of a greenhouse.  They do not do well in the dark and need good lighting if inside the house.</pre
+    >
+  </div>
+  <div class="anime3">
+    <div class="image3">
+      <a class="pic2"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vMMmjfpfkJKHoQP4PA9yg92ZbS0EVy0ExQ&usqp=CAU"
+          class="imagecontent3"
+      /></a>
+    </div>
+    <h2>3. Orchid Plant</h2>
+    <pre style="color: white; padding-left: 3em;">
+      Orchids are easily distinguished from other plants, as they share some very evident derived characteristics or synapomorphies.
+    Among these are: bilateral symmetry of the flower (zygomorphism), many resupinate flowers, a nearly always highly modified petal
+                            (labellum), fused stamens and carpels, and extremely small seeds.</pre
+    >
+  </div>
+  <div class="anime4">
+    <div class="image4">
+      <a class="pic3"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoLYORLkENsyFvUdh9lq6Jkbh3f5LBXlDEmA&usqp=CAU"
+          class="imagecontent4"
+      /></a>
+    </div>
+    <h2>4. Snake Plant</h2>
+    <pre style="color: white; padding-left: 18em;">
+                      Dracaena trifasciata is a species of flowering plant in the family Asparagaceae,
+                              native to tropical West Africa from Nigeria east to the Congo. 
+                    It is most commonly known as the snake plant, Saint George's sword, mother-in-law's tongue, 
+                              and viper's bowstring hemp, among other names. Wikipedia</pre
+    >
+  </div>
+  <div class="anime5">
+    <div class="image5">
+      <a class="pic4"
+        ><img
+          src="data:image/jpeg;base64,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"
+          class="imagecontent5"
+      /></a>
+    </div>
+    <h2>5. Cactus Plant</h2>
+    <pre style="color: white; padding-left: 8em;">
+Cacti occur in a wide range of shapes and sizes. Most cacti live in habitats subject to at least some drought.
+Many live in extremely dry environments, even being found in the Atacama Desert, one of the driest places on earth.
+Cacti show many adaptations to conserve water. Almost all cacti are succulents, meaning they have thickened, fleshy parts 
+adapted to store water.Unlike many other succulents, the stem is the only part of most cacti where this vital process takes place.</pre
+    >
+  </div>
+  <div class="request">
+    <pre>Want to know more? Register today and have 
+access to our entire Products!</pre>
+  </div>
+</section>
+<div class="gpic">
+  <p>Make your house beautiful </p>
+  <p>With Crosby</p>
+</div>
+<div class="reg">
+  <p style="font-family: 'Nanum Myeongjo', serif;padding-top: 355px;padding-left: 602px;font-size: 32px;">They grow up so fast.</p>
+  <p style="padding-left: 529px;font-size: 19px;">Don’t miss a thing. Register to receive news and updates.</p>
+  <button class="button"  (click)="toggle()"   *ngIf="!_service.loggedIn()" routerLinkActive="active">Register</button>
+</div>
+</div>
+<router-outlet></router-outlet>
+<footer class="end">
+  <p  style="padding-top: 55px;padding-left: 55px;font-size: 48px;">Crosby</p>
+  <div >
+    <ul class="last" >
+      <li >
+        <a style="color: white; text-decoration: none;"
+          href="https://www.instagram.com/aniket._.kesarwani.007/"
+        ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a style="color: white; margin-left: 23px; text-decoration: none;"
+          href="https://www.facebook.com/aniket.kesarwani.37/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a style="color: white; margin-left: 23px; text-decoration: none;"
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+        ><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </li>
+    </ul>  
+  </div>
+  <div class="join">
+    <p style="font-weight: 800;">Join Us</p>
+    <div style="font-weight: 400;">Get all the latest updates.<br>Connect with Us</div>
+    <div class="email">
+    <input type="email" placeholder="Enter your Email">
+    </div> 
+    <button class="ebtn" >Go</button>
+  </div>
+</footer>

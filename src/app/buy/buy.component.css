@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.up{
+    text-align: center;
+    padding-top: 5em;
+}
+.all{
+    background-color: rgb(41, 41, 41);
+    /* height: 100vh; */
+    color: white;
+}
+
+.itme{
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    margin-top: 5em;
+    border:2px solid white;
+    /* overflow: hidden; */
+
+}
+.try{
+    display: flex;
+    padding-top: 1em;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-left: 9px;
+    
+}
+.bttn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    
+}
+
+.button{
+    background-color: rgb(150, 150, 150);
+    border: none;
+    color:white;
+    padding: 10px 10px;
+    margin-left: -5px;
+}
+.button:hover{
+    opacity: 0.65;
+    color: rgb(255, 255, 255);
+    /* transition-delay: 1s; */
+    transition-timing-function: ease-in;
+    cursor: pointer;
+    border: none;
+}
+#img1:hover{
+    background-image: url("https://neilsperry.com/wp-content/uploads/2017/04/4-13-17-Easter-lily.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img1{
+    background-image: url('https://img.teleflora.com/images/o_0/l_flowers:T12Z106A,pg_6/w_800,h_1000,cs_no_cmyk,c_pad/f_jpg,q_auto:eco,e_sharpen:200/flowers/T12Z106A/EasterLilyPlant');
+    transition: all 1s ease-in-out;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+div {
+    padding: 0.5em;
+}
+#img2:hover{
+    background-image: url("https://i.pinimg.com/originals/2a/c7/a9/2ac7a98b4c5e6281690e0fe6061729bb.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img2{
+    background-image: url('https://simplebest.club/wp-content/uploads/2018/08/Pencil-Cactus-indoor.jpg');
+    transition: all 1s ease-in-out;
+}
+#img3:hover{
+    background-image: url("https://www.thegoodearthgarden.com/wp-content/uploads/2016/08/Alocasia-600x600.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img3{
+    background-image: url('https://www.logees.com/media/catalog/product/cache/1/image/600x600/9df78eab33525d08d6e5fb8d27136e95/a/l/alocasia_frydek-new.jpg');
+    transition: all 1s ease-in-out;
+}
+#img4:hover{
+    background-image: url("https://se5revolution.s3.amazonaws.com/uploads/12184/e2fafe43-b699-48ea-9e48-cfcb9438a396.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img4{
+    background-image: url('https://kalamazooflorist.imgix.net/images/itemVariation/snakeplantinpot-200225110212.jpeg');
+    transition: all 1s ease-in-out;
+}
+#img5:hover{
+    background-image: url("https://www.extension.iastate.edu/news/files/eo-news/images/mothorchid.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img5{
+    background-image: url('https://maximusonlinestores.com/wp-content/uploads/2020/01/orchid-flower-plant.jpeg');
+    transition: all 1s ease-in-out;
+}
+#img6:hover{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBZBoReNxfzmXpZtjlS0PGVsDXZHGE2yKZw&usqp=CAU");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img6{
+    background-image: url('https://cdn.shopify.com/s/files/1/1685/8749/products/Unknown-1_69f5681d-4ad3-4ddb-9c36-d0027b8764c1_1024x.jpg?v=1592215808');
+    transition: all 1s ease-in-out;
+}
+#img7:hover{
+    background-image: url("https://www.theparcelflower.co/uploads/1/3/0/0/130029891/s592593734635582981_p133_i2_w780.jpeg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img7{
+    background-image: url('https://www.plantsguru.com/image/cache/catalog/Fern/pg-maiden-hair-fern-800x800.jpg');
+    transition: all 1s ease-in-out;
+}
+#img8:hover{
+    background-image: url("https://www.gardentags.com/profile/ilulyusuf/images/697976/750/euphorbia-trigona.jpeg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img8{
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/61zgeLQgu0L._SY679_.jpg');
+    transition: all 1s ease-in-out;
+}
+#img9:hover{
+    background-image: url("https://www.ioniacd.org/wp-content/uploads/2017/01/Lady-Fern-potted-wildflowers.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img9{
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/61EZWCMhrbL._SY679_.jpg');
+    transition: all 1s ease-in-out;
+}
+#img10:hover{
+    background-image: url("https://thumbs.dreamstime.com/b/tropical-palm-leaves-jungle-leaf-seamless-floral-pattern-background-tropical-palm-leaves-jungle-leaf-seamless-floral-pattern-110974502.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img10{
+    background-image: url('https://www.meijer.com/content/dam/meijer/product/0002/25/3270/56/0002253270561_1200.png');
+    transition: all 1s ease-in-out;
+}
+#img11:hover{
+    background-image: url("https://www.thetutuguru.com.au/wp-content/uploads/2018/03/devilsivyPothos-Plant.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img11{
+    background-image: url('https://cdn.shopify.com/s/files/1/0013/3529/6118/products/Terracotta-Pot-6_Pothos-Jade-6.jpg?v=1544979630');
+    transition: all 1s ease-in-out;
+}
+#img12:hover{
+    background-image: url("https://www.plantindex.com/wp-content/uploads/2020/06/dracaena-lemon-lime.jpg");
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+#img12{
+    background-image: url('https://cdn.shopify.com/s/files/1/0070/0687/9859/products/DRACAENAREFLEXA_2048x.jpg?v=1572455589');
+    transition: all 1s ease-in-out;
+}

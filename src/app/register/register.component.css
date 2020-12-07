@@ -1,0 +1,46 @@
+.container-fluid {
+    width: 400px;
+    /* margin-top: 3em; */
+}
+.alert {
+    transition: 2s ease-in;
+}
+.decor {
+    
+    border: 2px solid white;
+    padding: 2em;
+    margin-left: 16vh;
+    border-radius: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+h2 {
+    margin-bottom: 1em;
+}
+.btn {
+    width: 150px;
+    margin-top: 2em;
+    border-radius: 30px;
+    box-shadow: 4px 4px 3px black;
+    font-size: large;
+}
+.register-design{
+    background-image: url("https://www.wallpapers4u.org/wp-content/uploads/leaf_green_black_carved_4275_1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    padding-top: 9em;
+}
+.garden{
+    margin-left:50em;
+    margin-top: -25em;
+    color: white;
+}
+.dlo{
+    text-align: center;
+    padding-top: 2px;
+}

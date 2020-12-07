@@ -1,0 +1,93 @@
+<!-- Loader starts here -->
+<app-loader *ngIf="displayLoader"></app-loader>
+<!-- Loader ends here -->
+<div class="register-design">
+<div class="container-fluid decor" *ngIf="!displayLoader">
+    <!-- Success message starts here -->
+	<div class="alert alert-success" id="alert" role="alert" *ngIf="success">
+		Registration Successful!
+		<button type="button" class="close" (click)="removeAlert()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+	</div>
+	<!-- Success message ends here -->
+
+	<!-- Failure message starts here -->
+	<div class="alert alert-danger" id="alert" role="alert" *ngIf="failure">
+		Registration Failed. Please try again!
+		<button type="button" class="close" (click)="removeAlert()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <!-- failure message ends here -->
+<h2 style="text-align: center;">Registeration Form</h2>
+
+<form #regForm="ngForm" (ngSubmit)="register(regForm)">
+  <div class="form-row">
+	<div class="form-group col-md-6">
+	  <label for="firstName">First name</label>
+	  <input type="text" class="form-control" id="firstName" name="firstName" [(ngModel)]="firstName" #fullname="ngModel" [class.is-invalid]="fullname.invalid && fullname.touched " placeholder="Enter First name" required>
+	  <small class="text-danger" [class.d-none]="fullname.valid || fullname.untouched">First Nmae is required!</small>
+	</div>
+	<div class="form-group col-md-6">
+		<label for="lastName">Last name</label>
+		<input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="lastName" #lastname="ngModel" [class.is-invalid]="lastname.invalid && lastname.touched" placeholder="Enter Last Name" required>
+		<small class="text-danger" [class.d-none]="lastname.valid || lastname.untouched">Last Name is required!</small>
+	  </div>
+  </div>  
+  <div class="form-row">
+	<div class="form-group col-md-6">
+		<label for="phone_no">Mobile number</label>
+		<input type="number" class="form-control" id="phone_no" name="phone_no" [(ngModel)]="phone_no" #phone="ngModel" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched"  placeholder="Enter mobile number" required>
+		
+		<div *ngIf="phone.errors && (phone.invalid && phone.touched)">
+		  <small class="text-danger" *ngIf="phone.errors.required">Mobile number is required!</small>
+		  <small class="text-danger" *ngIf="phone.errors.pattern">Mobile number must be of 10 digits!</small>
+
+		</div>
+	</div>
+	<div class="form-group col-md-6">
+		<label for="email">Email</label>
+		<input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" #mail="ngModel" [class.is-invalid]="mail.invalid && mail.touched" placeholder="Enter email" required>
+		<small class="text-danger" [class.d-none]="mail.valid || mail.untouched">Email is required!</small>
+	</div>
+	</div>
+  <div class="form-row">
+	  <div class="form-group col-md-6">
+		<label for="address">Address</label>
+		<input type="text" class="form-control" id="address" name="address" [(ngModel)]="address" #adrss="ngModel" [class.is-invalid]="adrss.invalid && adrss.touched"  placeholder="Enter your Address" required>
+		<small class="text-danger" [class.d-none]="adrss.valid || adrss.untouched">Address is required!</small>
+	  </div>
+	  <div class="form-group col-md-6">
+		<label for="password">Password</label>
+		<input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" #pw="ngModel" [class.is-invalid]="pw.invalid && pw.touched" pattern="\d{6}$" placeholder="Enter password" required>
+		<div *ngIf="pw.errors && (pw.invalid && pw.touched)">
+		  <small class="text-danger" *ngIf="pw.errors.required">Password is required!</small>
+		  <small class="text-danger" *ngIf="pw.errors.pattern">Password must be of 6 digits!</small>
+
+		</div>
+	  </div>
+  </div>
+  <div class="form-row">
+	<div class="col-md-3">
+	  &nbsp;
+	</div>
+	<div class="col-md-6">
+	  <button type="submit" class="btn btn-primary" [disabled]="!regForm.form.valid">Register</button>
+	</div>
+	<div class="col-md-3">
+	  &nbsp;
+	</div>
+  </div>
+  <!-- <div class="dlo">
+	<small>Already have an account?<a style="text-decoration: none;" [routerLink]="['/login']" routerLinkActive="active" >Login</a></small>
+  </div> -->
+  <br>
+</form>
+</div>
+<div class="garden">
+	<p style=" font-size:55px ;font-weight: 500;">To Plant a Garden is to</p>
+	<p style="margin-left: 7em;font-size: 34px;font-weight: 500;">believe in Tomorrow.</p>
+	<p style="margin-left: 21em;font-weight: 500;font-size: 19px;">-Audrey Hepburn</p>
+</div>
+</div>

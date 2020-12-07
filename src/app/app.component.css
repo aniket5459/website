@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  display: flex;
+  width: 100vw;
+  height:10vh;
+  flex-direction: row;
+  background-color: transparent;
+  
+}
+.container{
+  margin-top: 10px;
+  list-style: none;
+  color:white
+
+}
+.navbar li a{
+  text-decoration: none;
+  color:white;
+  padding: 9px;
+  font-weight: 500;
+  margin-top: 13px;
+  font-size: 17px;
+
+}
+
+.title:hover{
+cursor: pointer;
+}
+.container:hover{
+  cursor: pointer;
+}
+.figures{
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  padding-right: 2em;
+}
+header{
+  background-image: url("https://img4.goodfon.com/wallpaper/nbig/1/f0/chernyi-fon-kaktusy-kaktus-rasteniia-gorshki.jpg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 100vh ; 
+  background-attachment:scroll;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.content{
+  color:white;
+  margin: 232px 605px ;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 44px;
+  text-align: center;
+}
+.mid-sec{
+  background-color: rgb(70, 70, 70);
+  
+}
+.sec{
+  text-align: center;
+  padding-top:48px ;
+  color: white;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+.anime1::after{
+  content:"";
+  clear: both;
+  display: table;
+  
+  }
+  .anime1{
+  border:2px solid rgb(70, 70, 70);
+  background-color: transparent;
+  padding-top: 38px;
+  }
+  .image{
+    float: left;
+    margin-left: 55px;
+  }
+  .imagecontent{
+  width:250px;
+  height: 300px;
+  box-shadow: 6px 6px 8px black;
+  
+  }
+  section h2{
+    color:white;
+    padding-left: 21em;
+  }
+  /* .pic:hover{
+    background-image: url("https://cdn.shopify.com/s/files/1/1706/1307/products/Euphorbia-tirucalli-Pencil-Cactus-Leaves_600x.jpg?v=1552215090") ;
+    width:250px;
+    height: 300px;
+    cursor: pointer;
+  } */
+  .image2{
+    float:right;
+    margin-right: 55px;
+    }
+    .imagecontent2{
+    width:250px;
+    height: 300px;
+    box-shadow: 6px 6px 8px black; 
+    
+    }
+    .anime2::after{
+    content:"";
+    clear: both;
+    display: table;
+    
+    }
+    .anime2{
+    border:2px solid rgb(70, 70, 70);
+    background-color: transparent;
+    padding-top: 38px;
+    }
+  .image3{
+    float:left;
+    margin-left: 55px;
+    }
+    .imagecontent3{
+    width:250px;
+    height: 300px;
+    box-shadow: 6px 6px 8px black;
+    
+    }
+    .anime3::after{
+    content:"";
+    clear: both;
+    display: table;
+    
+    }
+    .anime3{
+    border:2px solid rgb(70, 70, 70);
+    background-color: transparent;
+    padding-top: 38px;
+    }
+  .image4{
+    float: right;
+    margin-right: 55px;
+    }
+    .imagecontent4{
+    width:250px;
+    height: 300px;
+    box-shadow: 6px 6px 8px black;
+}
+
+
+    
+    
+    .anime4::after{
+    content:"";
+    clear: both;
+    display: table;
+    
+    }
+    .anime4{
+    border:2px solid rgb(70, 70, 70);
+    background-color: transparent;
+    padding-top: 38px;
+    }
+  .image5{
+    float: left;
+    margin-left: 55px;
+    }
+    .imagecontent5{
+    width:250px;
+    height: 300px;
+    box-shadow: 6px 6px 8px black;
+    
+    }
+    .anime5::after{
+    content:"";
+    clear: both;
+    display: table;
+    
+    }
+    .anime5{
+    border:2px solid rgb(70, 70, 70);
+    background-color: transparent;
+    padding-top: 38px;
+    }
+    .request pre{
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      border:2px solid white;
+      border-radius: 25px;
+      padding: 12px;
+      display: inline-block;
+      margin-left: 400px;
+      margin-top: 125px;
+      box-shadow: 5px 5px 5px black;
+    }
+    .gpic{
+      height: 110vh;
+      /* width: 500px; */
+      background-image: url("https://cdn.vox-cdn.com/thumbor/_nEzJL5DJp-SEejd7LgfI_Sjq8Y=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/10761289/bloomscape_lifestyle_plant_shelfie.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment:scroll;
+      backface-visibility: hidden;
+      overflow: hidden;
+      font-size: 52px;
+      font-family: 'Nanum Myeongjo', serif;
+      padding-top: 80px;
+      /* padding-left: 24px; */
+      font-weight:550 ;
+    }
+    .reg{
+      height: 110vh;
+      background-image: url("https://images.wallpaperscraft.com/image/leaves_plant_dark_120682_1366x768.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      /* padding-top: 352px;
+      padding-left: 560px; */
+      
+    }
+    .button{
+      margin-left: 735px;
+      padding: 10px 10px;
+      background-color: rgb(150, 150, 150);
+      border: none;
+      color:white
+    }
+    .button:hover{
+      opacity: 0.65;
+      color: rgb(255, 255, 255);
+      /* transition-delay: 1s; */
+      transition-timing-function: ease-in;
+      cursor: pointer;
+      border: none;
+    }
+    .end{
+      background-color: rgb(53, 52, 52);
+      height:35vh;
+      color: white;
+    }
+    .last{
+      list-style: none;
+      display:flex;
+      flex-direction: row;
+      padding-top: 25px;
+      padding-left: 63px;
+      font-size: 25px;
+      text-decoration: none;
+      
+    }
+    .join{
+      margin-left:68em;
+      margin-top: -9em;
+    }
+    .email{
+      margin-top: 8px;
+      
+    }
+
+    .ebtn{
+      margin-top: 8px;
+      padding: 5px;
+      background-color: rgb(0,137,137);
+      color: white;
+      border:none;
+      border:1px solid rgb(0,137,137); 
+    }
+    .ebtn:hover{
+      cursor: pointer;
+      opacity: 0.7;
+      
+    }
